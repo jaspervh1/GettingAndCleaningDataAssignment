@@ -9,4 +9,15 @@ This codebook contains descriptions of the columns that are part of the submitte
 | Mean of tBodyAcc-mean()-X|    numeric			| Mean of the tBodyAcc-mean()-X measurement for this activity and subject|
 | Mean of tBodyAcc-mean()-Y|    numeric			| Mean of the tBodyAcc-mean()-Y measurement for this activity and subject|
 | Mean of tBodyAcc-mean()-Z|    numeric			| Mean of the tBodyAcc-mean()-Z measurement for this activity and subject|
-							
+| Mean of tBodyAcc-std()-X |    numeric			| Mean of the tBodyAcc-std()-X measurement for this activity and subject|
+| Mean of tBodyAcc-std()-Y |    numeric			| Mean of the tBodyAcc-std()-Y measurement for this activity and subject|
+| Mean of tBodyAcc-std()-Z |    numeric			| Mean of the tBodyAcc-std()-Z measurement for this activity and subject|
+| Mean of tGravityAcc-mean()-X |    numeric			| Mean of the tGravityAcc-mean()-X measurement for this activity and subject|
+| Mean of tGravityAcc-mean()-Y |    numeric			| Mean of the tGravityAcc-mean()-Y measurement for this activity and subject|
+| Mean of tGravityAcc-mean()-Z |    numeric			| Mean of the tGravityAcc-mean()-Z measurement for this activity and subject|
+| Mean of tGravityAcc-std()-X |    numeric			| Mean of the tGravityAcc-std()-X measurement for this activity and subject|
+| Mean of tGravityAcc-std()-Y |    numeric			| Mean of the tGravityAcc-std()-Y measurement for this activity and subject|
+| Mean of tGravityAcc-std()-Z |    numeric			| Mean of the tGravityAcc-std()-Z measurement for this activity and subject|
+| Mean of tBodyAccJerk-mean()-X |    numeric			| Mean of the tBodyAccJerk-mean()-X measurement for this activity and subject|
+| Mean of tBodyAccJerk-mean()-Y |    numeric			| Mean of the tBodyAccJerk-mean()-Y measurement for this activity and subject|
+| Mean of tBodyAccJerk-mean()-Z |    numeric			| Mean of the tBodyAccJerk-mean()-Z measurement for this activity and subject|							

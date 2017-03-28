@@ -1,6 +1,12 @@
 # Codebook
 The tidy data set submitted as part of the Getting and Cleaning Data Assignment consists of average values of 66 mean and standard deviation measurements grouped by Subject and Activity.
-This codebook contains descriptions of the columns that are part of the submitted data set. 
+This codebook contains descriptions of the columns that are part of the submitted data set and details of the process by which the data set was derived.
+
+To start with, the source data set is obtained from the website http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones. This represents data collected from the accelerometers from the Samsung Galaxy S smartphone. This source data set contains two sets of data - training and test data. It also has the list of features which were measured, the values of those features for both the training and test data, the list of subjects who took part in the study, the labels of the various activities and their corresponding codes.
+
+First, for the test data set, the subject, activity and measurements data are read from the 'subject_test.txt', 'y_test.txt' and 'X-test.txt' files respectively. These are then bound together using the cbind operation. The same steps are done for the train data set as well. The column names of the test and train data set obtained above are now set taking the values from the 'features.txt' file. Subsequently the test and train data sets are merged using the rbind operation. From this combined dataset that has been created, only the columns that correspond to the mean or standard deviation of the measurements are taken along with the subject and activity column information. This is achieved by subsetting the data set taking all rows and only the subject and  activity columns and only those other columns that match the pattern "*mean\\(|*std". The activity column of this filtered data set is updated with the activity labels as obtained from the 'activity_labels.txt' file. From this data set, the average of each measurement is now calculated grouped by subject and activity using the aggregate function. The columns of the new data set thus obtained are labelled appropriately appending the text 'Mean of' to the original column name (the name of the feature) to indicate these are average values. Finally this tidy data set is written to a file.
+
+Given below is the list of columns which are part of the tidy data set obtained by the process described above.            
 
 | Column                   | Data Type   		| Description |
 |--------------------------|--------------------|-------------|

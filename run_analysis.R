@@ -1,5 +1,5 @@
 
-  # update the data set path to point to the parent UCI HAR Dataset folder in which all the input data are stored
+  # update the data_set_path variable to point to the parent UCI HAR Dataset folder in which all the input data are stored
   data_set_path <- "./UCI HAR Dataset"  
   
   trainFilesPath <- paste0(data_set_path,"/train")
@@ -65,5 +65,6 @@
   
   colnames(summarized_data) <- all_cols
   
+  # write the tidy dataset to a file
   write.table(summarized_data, file="./tidy_data.txt")
   

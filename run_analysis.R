@@ -66,5 +66,5 @@
   colnames(summarized_data) <- all_cols
   
   # write the tidy dataset to a file
-  write.table(summarized_data, file="./tidy_data.txt")
+  write.table(summarized_data, file="./tidy_data.txt", row.names = FALSE)
   
